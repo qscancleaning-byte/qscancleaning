@@ -1,0 +1,32 @@
+/* assets/styles.css */
+
+/* Basic image polish */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: subtle hover on gallery */
+.gallery img {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.gallery img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.07);
+}
+
+/* Optional: brand accent (matches your emerald theme) */
+:root {
+  --brand: #059669; /* emerald-600-ish */
+}
+.button-brand {
+  background: var(--brand);
+  color: #fff;
+  border-radius: 0.75rem;
+  padding: .75rem 1rem;
+  font-weight: 600;
+}
+.button-brand:hover {
+  filter: brightness(0.95);
+}
